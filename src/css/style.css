@@ -1,3 +1,8 @@
+/*!
+ * Caculadora de Notas
+ * Copyright(c) 2018 Ewerton Coutinho
+ * Licensed under MIT (https://github.com/ewertoncoutinho/calculadora-de-notas/blob/master/LICENSE)
+ */
 body {
     min-width: 320px;
 }
@@ -10,7 +15,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.shake-alert {
+.shake-animation {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
