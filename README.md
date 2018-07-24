@@ -19,7 +19,7 @@ Install Node.js
 ### Installing
 
 ```
-npm install
+$ npm install
 ```
 
 ## Deployment
@@ -27,7 +27,7 @@ npm install
 Run application with the command
 
 ```
-npm start
+$ npm start
 ```
 
 ## Built With

@@ -10,6 +10,10 @@ const decimal = numero => numero.toFixed(2);
 const notaFinal = media => (50 - media * 6) / 4;
 const getNota = minhasNotas => minhasNotas;
 const sum = (total, atual) => total + atual;
+const clean = () => {
+    minhasNotas.length=0;
+    notasError.length=0
+};
 document.querySelector('[result]').onclick = function () {
     resultado()
 };
@@ -52,7 +56,7 @@ const resetNotas = () => {
         window.createInput = elementoInput();
     }
     document.getElementById('demo').innerHTML = '';
-    numInput -= 1
+    numInput = 3
 };
 const elementoInput = () => {
     window.createInput = document.createElement('div');
@@ -88,8 +92,8 @@ const resultadoFinal = media => {
 };
 const validate = e => {
     let nota = parseFloat(e.value);
-    if (!(isNaN(nota))) {
-        if (nota <= 10 && nota >= 0) {
+    if (!isNaN(nota)){
+        if (nota >= 0 && nota <= 10) {
             minhasNotas.push(nota)
         }
         else {
@@ -97,30 +101,26 @@ const validate = e => {
         }
     }
 };
-
 const display = (valor) => {
     return `<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">Resultado</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div><div class="modal-body"><div class="mt-3 col h5">${valor}</div></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></div></div></div></div>`
 };
-
 const resultado = () => {
     document.getElementsByName('my-input').forEach(e => validate(e));
-    if (minhasNotas.length >= 2 && notasError.length === 0) {
-        console.log('err');
+    if (notasError.length === 0 && minhasNotas.length >= 2) {
         const totalNota = minhasNotas.map(getNota).reduce(sum);
         const media = totalNota / minhasNotas.length;
-        console.log(resultadoFinal(media));
         document.getElementById('demo').innerHTML = display(resultadoFinal(media));
         $('.alert').alert('close');
-        minhasNotas.length = 0
+        clean()
     }
     else {
+        document.getElementById("demo").innerHTML="";
         if (notasError.length > 0) {
             alerta('alert-warning', `Você informou ${notasError.length} ${notasError.length > 1 ? 'notas' : 'nota'} ${notasError.length > 1 ? 'inválidas' : 'inválida'}. Por favor insira ${notasError.length > 1 ? 'valores' : 'um valor'} entre 0 e 10`);
-            notasError.length = 0
         }
         else {
             alerta('alert-warning', 'Você esqueceu de informar alguma nota.');
-            minhasNotas.length = 0
         }
+        clean()
     }
 };
