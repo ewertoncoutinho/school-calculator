@@ -30,15 +30,6 @@ Run application with the command
 $ npm start
 ```
 
-## Built With
-
-* [npm](https://www.npmjs.com) - Dependency Management
-* [gulp](https://gulpjs.com/) - Task Runner
-
-## Authors
-
-* **Ewerton Coutinho** - *Initial work* - [EwertonCoutinho](https://github.com/EwertonCoutinho)
-
 See also the list of [contributors](https://github.com/ewertoncoutinho/calculadora-de-notas/graphs/contributors) who participated in this project.
 
 ## License
