@@ -2,7 +2,7 @@
 
 This project was generated with JavaScript
 
-Hosted on: https://ewertoncoutinho.github.io/calculadora-de-notas/
+Hosted on: https://ewertoncoutinho.github.io/school-calculator/
 
 ## Getting Started
 
