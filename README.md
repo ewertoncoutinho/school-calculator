@@ -1,4 +1,4 @@
-# Calculadora de Notas
+# School Calculator
 
 This project was generated with JavaScript
 
@@ -6,29 +6,17 @@ Hosted on: https://ewertoncoutinho.github.io/school-calculator/
 
 ## Getting Started
 
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software
-
-```
-Install Node.js
-```
-
-### Installing
-
-```
-$ npm install
-```
-
-## Deployment
-
-Run application with the command
-
-```
-$ npm start
-```
 
 See also the list of [contributors](https://github.com/ewertoncoutinho/calculadora-de-notas/graphs/contributors) who participated in this project.
 

@@ -1,36 +1,21 @@
 {
-  "name": "calculadora-de-notas",
+  "name": "school-calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node app",
+    "start": "node app"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ewertoncoutinho/calculadora-de-notas.git"
+    "url": "git+https://github.com/ewertoncoutinho/school-calculator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ewertoncoutinho/calculadora-de-notas/issues"
-  },
-  "homepage": "https://github.com/ewertoncoutinho/calculadora-de-notas#readme",
-  "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "gulp": "^4.0.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-clean-css": "^3.9.4",
-    "gulp-concat": "^2.6.1",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-remove-empty-lines": "^0.1.0",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0",
-    "gulp-uglifycss": "^1.1.0",
-    "gulp-webserver": "^0.9.1"
+    "express": "^4.18.1",
+    "serve-static": "^1.15.0"
   }
 }
