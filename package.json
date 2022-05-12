@@ -1,21 +1,23 @@
 {
-  "name": "school-calculator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node app",
-    "start": "node app"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ewertoncoutinho/school-calculator.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "express": "^4.18.1",
-    "serve-static": "^1.15.0"
-  }
+	"name": "school-calculator",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"dev": "node app",
+		"start": "node app",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ewertoncoutinho/school-calculator.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"express": "^4.18.1",
+		"prettier": "2.6.2",
+		"serve-static": "^1.15.0"
+	}
 }
